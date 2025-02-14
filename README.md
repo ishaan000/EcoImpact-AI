@@ -11,7 +11,6 @@ EcoImpact AI is a sustainability-focused AI system that provides eco-friendly so
 - **Backend:** FastAPI, Python, Redis Queue (RQ), OpenAI API
 - **Frontend:** Next.js 15, TypeScript, Material-UI (MUI)
 - **Database & Caching:** Redis for task management
-- **Infrastructure:** Dockerized for easy deployment
 
 ---
 
