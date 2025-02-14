@@ -2,7 +2,7 @@
 
 ## Overview
 
-EcoImpact AI is a sustainability-focused AI system that provides eco-friendly solutions through intelligent agents. It consists of a **FastAPI backend** for AI processing and a **Next.js 15 frontend** with a ChatGPT-style interface.
+EcoImpact AI is a sustainability-focused AI system that provides eco-friendly solutions through intelligent agents. It consists of a **FastAPI backend** for AI processing and a **Next.js 15 frontend**.
 
 ---
 
