@@ -75,3 +75,63 @@ yarn dev  # or npm run dev
 - GET	`/assign-task/`	Assigns a task to an agent
 - GET	`/job-result/`	Fetches task results
 - DELETE	`/reset-memory/`	Clears user memory
+---
+
+## API Usage with cURL
+
+### 1) Assign a Task to an AI Agent
+```sh
+curl -X GET "http://127.0.0.1:8000/assign-task/" \
+     -H "Content-Type: application/json" \
+     --data-urlencode "user_id=user_123" \
+     --data-urlencode "agent_name=transport_agent" \
+     --data-urlencode "user_input=How can I reduce my carbon footprint?"
+```
+
+### Response Example:
+
+```json
+{
+  "status": "job_id_123456789"
+}
+```
+### 2) Fetch Task Result
+```sh
+curl -X GET "http://127.0.0.1:8000/job-result/" \
+     -H "Content-Type: application/json" \
+     --data-urlencode "job_id=job_id_123456789"
+```
+
+### Response Example:
+
+```json
+{
+  "status": "completed",
+  "result": "Use public transport, carpool, or switch to an electric vehicle."
+}
+
+```
+
+## 3) Reset AI Memory
+```sh
+curl -X DELETE "http://127.0.0.1:8000/reset-memory/" \
+     -H "Content-Type: application/json" \
+     --data-urlencode "user_id=user_123"
+```
+### Response Example:
+
+```json
+{
+  "message": "User memory reset successfully."
+}
+```
+
+
+
+
+
+
+
+
+
+
